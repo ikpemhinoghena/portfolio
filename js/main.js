@@ -336,35 +336,67 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ============================================================
-     CONTACT FORM
+     CONTACT FORM — Web3Forms
      ============================================================ */
   const contactForm = document.getElementById('contactForm');
-  const formStatus = document.getElementById('formStatus');
+  const formStatus  = document.getElementById('formStatus');
+  const submitBtn   = document.getElementById('submitBtn');
 
   if (contactForm) {
-    contactForm.addEventListener('submit', e => {
+    contactForm.addEventListener('submit', async e => {
       e.preventDefault();
 
-      const btn = contactForm.querySelector('button[type="submit"]');
-      const originalHTML = btn.innerHTML;
-      btn.innerHTML = '<span>Sending...</span> <i class="fa-solid fa-spinner fa-spin"></i>';
-      btn.disabled = true;
-      formStatus.className = 'form-status';
+      // Button loading state
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>Sending…</span><i class="fa-solid fa-spinner fa-spin"></i>';
+      }
+      formStatus.className   = 'form-status';
       formStatus.textContent = '';
 
-      // Simulate sending (replace with your actual form service)
-      setTimeout(() => {
-        btn.innerHTML = originalHTML;
-        btn.disabled = false;
-        formStatus.className = 'form-status success';
-        formStatus.innerHTML = '<i class="fa-solid fa-circle-check"></i> Message sent! I\'ll get back to you shortly.';
-        contactForm.reset();
+      try {
+        const formData = new FormData(contactForm);
+        const object   = Object.fromEntries(formData);
+        const json     = JSON.stringify(object);
 
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method:  'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept':       'application/json'
+          },
+          body: json
+        });
+
+        const data = await res.json();
+
+        if (res.ok && data.success) {
+          formStatus.className = 'form-status success';
+          formStatus.innerHTML =
+            '<i class="fa-solid fa-circle-check"></i> Message sent! I\'ll get back to you shortly.';
+          contactForm.reset();
+        } else {
+          throw new Error(data.message || 'Submission failed.');
+        }
+      } catch (err) {
+        formStatus.className = 'form-status error';
+        formStatus.innerHTML =
+          '<i class="fa-solid fa-circle-exclamation"></i> Something went wrong. Please try again or email me directly.';
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML =
+            '<span id="submitBtnText">Send Message</span><i class="fa-solid fa-paper-plane" id="submitBtnIcon"></i>';
+        }
+
+        // Auto-clear status after 6 seconds
         setTimeout(() => {
-          formStatus.textContent = '';
-          formStatus.className = 'form-status';
-        }, 5000);
-      }, 2000);
+          if (formStatus) {
+            formStatus.textContent = '';
+            formStatus.className   = 'form-status';
+          }
+        }, 6000);
+      }
     });
   }
 
@@ -544,5 +576,41 @@ document.addEventListener('DOMContentLoaded', () => {
       if (printsModal && printsModal.classList.contains('active')) closeModal(printsModal);
     }
   });
+
+  /* ============================================================
+     LIGHTBOX FUNCTIONALITY (Prints Modal)
+     ============================================================ */
+  const lightboxOverlay = document.getElementById('lightboxOverlay');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxClose = document.getElementById('lightboxClose');
+  const printItems = document.querySelectorAll('#printsModal .print-item img');
+
+  if (lightboxOverlay && lightboxImg && printItems.length > 0) {
+    printItems.forEach(img => {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxOverlay.classList.add('active');
+      });
+    });
+
+    const closeLightbox = () => {
+      lightboxOverlay.classList.remove('active');
+      setTimeout(() => { lightboxImg.src = ''; }, 300);
+    };
+
+    if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+    
+    lightboxOverlay.addEventListener('click', (e) => {
+      if (e.target === lightboxOverlay) closeLightbox();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightboxOverlay.classList.contains('active')) {
+        closeLightbox();
+        e.stopPropagation(); // prevent modal from closing too if possible
+      }
+    });
+  }
 
 });
