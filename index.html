@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ikpemhinoghena Etiuzale | Developer · Designer · Creator</title>
+  <meta name="description"
+    content="Software Developer, SEO Specialist, Graphic Designer & Video Editor based in Abuja, Nigeria.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Custom Cursor Removed (Using native OS cursor) -->
+  <!-- <div class="cursor-dot" id="cursorDot"></div> -->
+  <!-- <div class="cursor-ring" id="cursorRing"></div> -->
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">IE<span class="accent">.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right-group">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle light/dark mode">
+        <i class="fa-solid fa-sun theme-icon-sun"></i>
+        <i class="fa-solid fa-moon theme-icon-moon"></i>
+      </button>
+      <a href="#contact" class="btn-cta-nav">Let's Talk <i class="fa-solid fa-arrow-right-long"></i></a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose"><i class="fa-solid fa-xmark"></i></button>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="mobile-socials">
+      <a href="mailto:etiuzaleikpemhinoghena@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/ikpemhinoghena/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/ikpemhinoghena" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://wa.me/2349013187647" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero">
+    <!-- Background Atmosphere -->
+    <div class="hero-atmosphere">
+      <div class="atm-orb orb-1"></div>
+      <div class="atm-orb orb-2"></div>
+      <div class="atm-grid"></div>
+      <div class="atm-noise"></div>
+    </div>
+
+    <!-- Floating role tags -->
+    <div class="floating-tags">
+      <span class="ftag ftag-1"><i class="fa-solid fa-code"></i> Dev</span>
+      <span class="ftag ftag-2"><i class="fa-solid fa-film"></i> Video</span>
+      <span class="ftag ftag-3"><i class="fa-solid fa-palette"></i> Design</span>
+      <span class="ftag ftag-4"><i class="fa-solid fa-magnifying-glass-chart"></i> SEO</span>
+    </div>
+
+    <div class="hero-inner">
+      <!-- Left: Text content -->
+      <div class="hero-text" data-aos>
+        <p class="hero-greeting"><span class="greeting-line"></span> Hello, I am</p>
+        <h1 class="hero-name">
+          Ikpemhinoghena<br>
+          <em>Etiuzale</em>
+        </h1>
+        <div class="hero-typewriter-row">
+          <span class="tw-prefix">I craft as a </span>
+          <span class="tw-text" id="typewriterEl"></span><span class="tw-cursor">|</span>
+        </div>
+        <p class="hero-sub">Blending code, design & storytelling into<br>digital experiences that <em>actually</em>
+          convert.</p>
+        <div class="hero-cta-row">
+          <a href="#works" class="btn-primary">
+            <span>See My Work</span>
+            <i class="fa-solid fa-arrow-down-long"></i>
+          </a>
+          <a href="mailto:etiuzaleikpemhinoghena@gmail.com" class="btn-ghost">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email Me</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Photo area -->
+      <div class="hero-photo-wrap" data-aos>
+        <div class="photo-frame-outer">
+          <div class="photo-deco-corner tl"></div>
+          <div class="photo-deco-corner tr"></div>
+          <div class="photo-deco-corner bl"></div>
+          <div class="photo-deco-corner br"></div>
+          <div class="photo-ring"></div>
+          <img src="assets/images/profile.png" alt="Ikpemhinoghena Etiuzale" class="hero-photo">
+          <div class="photo-badge">
+            <i class="fa-solid fa-star"></i> Available for Work
+          </div>
+        </div>
+        <!-- Stats -->
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-n">4<sup>+</sup></span>
+            <span class="stat-l">Years</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat">
+            <span class="stat-n">50<sup>+</sup></span>
+            <span class="stat-l">Projects</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat">
+            <span class="stat-n">30<sup>+</sup></span>
+            <span class="stat-l">Clients</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom static roles -->
+    <div class="hero-roles-bar">
+      <div class="roles-track">
+        <span>Software Developer</span>
+        <span class="rbar-dot">◆</span>
+        <span>SEO Specialist</span>
+        <span class="rbar-dot">◆</span>
+        <span>Graphic Designer</span>
+        <span class="rbar-dot">◆</span>
+        <span>Video Editor</span>
+        <span class="rbar-dot">◆</span>
+        <span>Software Developer</span>
+        <span class="rbar-dot">◆</span>
+        <span>SEO Specialist</span>
+        <span class="rbar-dot">◆</span>
+        <span>Graphic Designer</span>
+        <span class="rbar-dot">◆</span>
+        <span>Video Editor</span>
+        <span class="rbar-dot">◆</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">01</span>
+        <span class="label-line"></span>
+        <span class="label-text">About Me</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-left" data-aos>
+          <h2 class="section-title">The Person<br><em>Behind the Screens</em></h2>
+          <p class="about-body">
+            I'm <strong>Ikpemhinoghena Etiuzale</strong> — a multi-disciplinary creative technologist based in
+            <strong>Nigeria</strong>. I move fluidly between writing clean, scalable code and crafting visuals that stop
+            people mid-scroll.
+          </p>
+          <p class="about-body">
+            My work lives at the intersection of logic and aesthetics. Whether I'm building a full-stack application,
+            editing a brand film, optimising a site for search engines, or designing a visual identity — I approach
+            every project with intention, precision, and a relentless pursuit of quality.
+          </p>
+          <p class="about-body">
+            I believe great digital work isn't siloed. The best products are engineered <em>and</em> designed well, rank
+            on search <em>and</em> look stunning. That's the standard I bring to every work.
+          </p>
+          <div class="about-pills">
+            <span><i class="fa-solid fa-location-dot"></i>Nigeria</span>
+            <span><i class="fa-solid fa-circle" style="color:#4ade80;font-size:8px"></i> Available for projects</span>
+            <span><i class="fa-solid fa-language"></i> English (Fluent)</span>
+          </div>
+          <div class="about-cta-row">
+            <a href="#contact" class="btn-primary">Work With Me</a>
+            <a href="#" class="btn-ghost"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+          </div>
+        </div>
+
+        <div class="about-right" data-aos>
+          <div class="about-cards-stack">
+            <div class="about-card ac-1">
+              <i class="fa-solid fa-code fa-2x"></i>
+              <h4>Software Dev</h4>
+              <p>Full-stack engineering with modern frameworks and clean architecture.</p>
+            </div>
+            <div class="about-card ac-2">
+              <i class="fa-solid fa-magnifying-glass-chart fa-2x"></i>
+              <h4>SEO Specialist</h4>
+              <p>Data-driven strategies that push organic rankings and drive real traffic.</p>
+            </div>
+            <div class="about-card ac-3">
+              <i class="fa-solid fa-palette fa-2x"></i>
+              <h4>Graphic Design</h4>
+              <p>Brand identities, print, and digital visuals that communicate instantly.</p>
+            </div>
+            <div class="about-card ac-4">
+              <i class="fa-solid fa-film fa-2x"></i>
+              <h4>Video Editing</h4>
+              <p>Storytelling through motion — from brand films to social content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">02</span>
+        <span class="label-line"></span>
+        <span class="label-text">My Skills</span>
+      </div>
+      <div class="skills-header" data-aos>
+        <h2 class="section-title">Tools &<br><em>Technologies</em></h2>
+        <p>A broad arsenal of tools, sharpened through years of project delivery across multiple disciplines.</p>
+      </div>
+      <div class="skills-categories" data-aos>
+
+        <!-- Software Development -->
+        <div class="skill-cat">
+          <div class="skill-cat-head">
+            <i class="fa-solid fa-code"></i>
+            <h3>Software Development</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-icon si-html"><i class="fa-brands fa-html5"></i></div>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-css"><i class="fa-brands fa-css3-alt"></i></div>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-js"><i class="fa-brands fa-js"></i></div>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-react"><i class="fa-brands fa-react"></i></div>
+              <span>React</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-d365">
+                <i class="fa-brands fa-microsoft"></i>
+              </div>
+              <span>Dynamics 365</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-node"><i class="fa-brands fa-node-js"></i></div>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-cs"><i class="fa-solid fa-c"></i></div>
+              <span>C#</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-pauto">
+                <i class="fa-brands fa-microsoft"></i>
+              </div>
+              <span>Power Automate</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-python"><i class="fa-brands fa-python"></i></div>
+              <span>Python</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-php"><i class="fa-brands fa-php"></i></div>
+              <span>PHP</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-git"><i class="fa-brands fa-git-alt"></i></div>
+              <span>Git</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-papps">
+                <i class="fa-brands fa-microsoft"></i>
+              </div>
+              <span>Power Apps</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-wp"><i class="fa-brands fa-wordpress"></i></div>
+              <span>WordPress</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-db"><i class="fa-solid fa-database"></i></div>
+              <span>SQL</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-api"><i class="fa-solid fa-plug"></i></div>
+              <span>REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design & Editing -->
+        <div class="skill-cat">
+          <div class="skill-cat-head">
+            <i class="fa-solid fa-pen-ruler"></i>
+            <h3>Design &amp; Video Editing</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-icon si-ps"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <span>Photoshop</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-ai"><i class="fa-solid fa-bezier-curve"></i></div>
+              <span>Illustrator</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-pr"><i class="fa-solid fa-film"></i></div>
+              <span>Premiere Pro</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-ae"><i class="fa-solid fa-star-of-life"></i></div>
+              <span>After Effects</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-fig"><i class="fa-brands fa-figma"></i></div>
+              <span>Figma</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-dv"><i class="fa-solid fa-video"></i></div>
+              <span>DaVinci Resolve</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-canva"><i class="fa-solid fa-shapes"></i></div>
+              <span>Canva</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-dim"><i class="fa-solid fa-cube"></i></div>
+              <span>Adobe Dimension</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-xd"><i class="fa-solid fa-pen-nib"></i></div>
+              <span>Adobe XD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEO & Marketing -->
+        <div class="skill-cat">
+          <div class="skill-cat-head">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            <h3>SEO &amp; Digital Marketing</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-icon si-ga"><i class="fa-brands fa-google"></i></div>
+              <span>Google Analytics</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-gsc"><i class="fa-solid fa-chart-area"></i></div>
+              <span>Search Console</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-sem"><i class="fa-solid fa-binoculars"></i></div>
+              <span>SEMrush</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-ahr"><i class="fa-solid fa-link"></i></div>
+              <span>Ahrefs</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-kw"><i class="fa-solid fa-key"></i></div>
+              <span>Keyword Research</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-tech"><i class="fa-solid fa-gear"></i></div>
+              <span>Technical SEO</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-con"><i class="fa-solid fa-pen-to-square"></i></div>
+              <span>Content Strategy</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-link"><i class="fa-solid fa-network-wired"></i></div>
+              <span>Link Building</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Productivity & AI -->
+        <div class="skill-cat">
+          <div class="skill-cat-head">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Other Productivity &amp; AI</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-icon si-google"><i class="fa-brands fa-google-drive"></i></div>
+              <span>Google Workspace</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-m365"><i class="fa-brands fa-microsoft"></i></div>
+              <span>Microsoft 365</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-ai-usage"><i class="fa-solid fa-robot"></i></div>
+              <span>AI Implementation</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-pm"><i class="fa-solid fa-list-check"></i></div>
+              <span>Project Management</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon si-comm"><i class="fa-solid fa-comments"></i></div>
+              <span>Team Collaboration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WORKS ===================== -->
+  <section id="works" class="section">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">03</span>
+        <span class="label-line"></span>
+        <span class="label-text">My Works</span>
+      </div>
+      <div class="works-header" data-aos>
+        <h2 class="section-title">Selected<br><em>Projects</em></h2>
+        <p class="works-desc">A curated selection of work spanning development, design, and storytelling. Each project
+          is a collaboration between craft and intention.</p>
+      </div>
+
+      <!-- Toggle Buttons -->
+      <div class="works-toggle" data-aos>
+        <button class="toggle-btn active" data-tab="all">
+          <i class="fa-solid fa-layer-group"></i>
+          <span>All Works</span>
+        </button>
+        <button class="toggle-btn" data-tab="software">
+          <i class="fa-solid fa-terminal"></i>
+          <span>Software Dev</span>
+        </button>
+        <button class="toggle-btn" data-tab="video">
+          <i class="fa-solid fa-clapperboard"></i>
+          <span>Video Editing</span>
+        </button>
+        <button class="toggle-btn" data-tab="design">
+          <i class="fa-solid fa-pen-nib"></i>
+          <span>Graphic Design</span>
+        </button>
+        <div class="toggle-slider" id="toggleSlider"></div>
+      </div>
+
+      <!-- Tab Panes -->
+      <div class="works-panes">
+
+        <!-- All Works -->
+        <div class="works-pane active" id="tab-all">
+          <div class="works-grid">
+            <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-blue">
+                <i class="fa-solid fa-compass fa-3x"></i>
+                <span class="wcard-tag">Web App</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Pathway Compass</h3>
+                <p>A comprehensive support hub for navigating your journey to success in BYU-Pathway Worldwide. Find
+                  step-by-step tutorials, registration help, career resources, and get help from agents who understand
+                  your journey.</p>
+                <div class="wcard-tech"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+                <a href="https://pathwaycompass.com/" target="_blank" class="wcard-link">View Project <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-indigo">
+                <i class="fas fa-graduation-cap fa-3x"></i>
+                <span class="wcard-tag">Web App</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Learning Hub Platform</h3>
+                <p>A full-featured e-learning platform similar to Coursera. Users can explore, select, and enroll in a
+                  wide variety of detailed courses and tutorials across intuitively organized categories.</p>
+                <div class="wcard-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <a href="https://ikpemhinoghena.github.io/learning-hub/learning-hub/" target="_blank"
+                  class="wcard-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-purple">
+                <i class="fa-solid fa-c fa-3x"></i>
+                <span class="wcard-tag">C# Repo</span>
+              </div>
+              <div class="wcard-body">
+                <h3>CSE210 C# Projects</h3>
+                <p>A consolidated repository of my early C# console applications, developed to demonstrate mastery of
+                  core object-oriented programming principles and structured logic.</p>
+                <div class="wcard-tech"><span>C#</span><span>.NET</span></div>
+                <a href="https://github.com/ikpemhinoghena/cse210-projects.git" target="_blank" class="wcard-link">View
+                  Repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-pink">
+                <i class="fa-solid fa-images fa-3x"></i>
+                <span class="wcard-tag">Gallery</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Interactive Gallery</h3>
+                <p>A visually stunning, dynamic image gallery featuring smooth animations, advanced CSS layouts, and
+                  engaging JavaScript implementations for a premium user experience.</p>
+                <div class="wcard-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <a href="https://ikpemhinoghena.github.io/InteractiveGallery/" target="_blank" class="wcard-link">View
+                  Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-teal">
+                <i class="fa-solid fa-leaf fa-3x"></i>
+                <span class="wcard-tag">Website</span>
+              </div>
+              <div class="wcard-body">
+                <h3>AfriHerbs</h3>
+                <p>A comprehensive website for a herbal healing organization. Highlights natural remedies with
+                  exceptional JavaScript-driven interactivity and beautifully structured health resources.</p>
+                <div class="wcard-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <a href="https://ikpemhinoghena.github.io/Afriherbs/" target="_blank" class="wcard-link">View Project <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-green">
+                <i class="fa-solid fa-seedling fa-3x"></i>
+                <span class="wcard-tag">Website</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Natural Curative Cure</h3>
+                <p>An alternative edition of the AfriHerbs platform dedicated to an organization offering natural
+                  organic herbs and curative solutions for serious illnesses.</p>
+                <div class="wcard-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <a href="https://ikpemhinoghena.github.io/Natural-Curative-Cure-2/" target="_blank"
+                  class="wcard-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-purple">
+                <i class="fa-solid fa-address-card fa-3x"></i>
+                <span class="wcard-tag">Web App</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Latter-day Prophets Directory</h3>
+                <p>A responsive web application that asynchronously fetches JSON data to dynamically generate and
+                  display a gallery of Latter-day Prophets. Showcases advanced DOM manipulation and API integration.</p>
+                <div class="wcard-tech"><span>HTML</span><span>CSS</span><span>JavaScript API</span></div>
+                <a href="https://ikpemhinoghena.github.io/Latter-day-Prophets/" target="_blank" class="wcard-link">View
+                  Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <!-- <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-green">
+                <i class="fa-solid fa-cart-shopping fa-3x"></i>
+                <span class="wcard-tag">E-Commerce</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Multi-Vendor E-Commerce Platform</h3>
+                <p>A scalable e-commerce solution with vendor management, payment integration, and an intelligent
+                  recommendation engine.</p>
+                <div class="wcard-tech"><span>C#</span><span>.NET</span><span>SQL Server</span></div>
+                <a href="#" class="wcard-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div> -->
+
+            <!-- <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-purple">
+                <i class="fa-solid fa-mobile-screen fa-3x"></i>
+                <span class="wcard-tag">Mobile</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Fintech Mobile App</h3>
+                <p>A personal finance tracker with AI-powered budgeting advice, expense categories, and bank-level
+                  transaction encryption.</p>
+                <div class="wcard-tech"><span>React Native</span><span>Firebase</span><span>Python</span></div>
+                <a href="#" class="wcard-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div> -->
+
+            <!-- <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-orange">
+                <i class="fa-solid fa-server fa-3x"></i>
+                <span class="wcard-tag">API</span>
+              </div>
+              <div class="wcard-body">
+                <h3>RESTful API Gateway</h3>
+                <p>A secure, rate-limited API gateway that centralises microservices with JWT authentication, logging,
+                  and auto-documentation.</p>
+                <div class="wcard-tech"><span>Node.js</span><span>Express</span><span>Redis</span></div>
+                <a href="#" class="wcard-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div> -->
+
+            <!-- <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-red">
+                <i class="fa-solid fa-play fa-3x"></i>
+                <span class="wcard-tag">Commercial</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Brand Commercial — Retail Client</h3>
+                <p>A 60-second product launch commercial featuring colour grading, motion graphics, and a custom sound
+                  design mix.</p>
+                <div class="wcard-tech"><span>Premiere Pro</span><span>After Effects</span><span>DaVinci</span></div>
+                <a href="#" class="wcard-link">Watch Video <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div> -->
+
+            <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-gold">
+                <i class="fa-brands fa-youtube fa-3x"></i>
+                <span class="wcard-tag">YouTube</span>
+              </div>
+              <div class="wcard-body">
+                <h3>PathwayCompass YouTube Channel</h3>
+                <p>Edited comprehensive video and multimedia content for the PathwayCompass YouTube channel, delivering
+                  high-quality long-form episodes and engaging short-form social reels that effectively drive brand
+                  engagement.</p>
+                <div class="wcard-tech"><span>After Effects</span><span>Premiere Pro</span><span>Canva</span></div>
+                <a href="https://www.youtube.com/@PathwayCompass" target="_blank" class="wcard-link">View Videos <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <!-- <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-teal">
+                <i class="fa-solid fa-video fa-3x"></i>
+                <span class="wcard-tag">Documentary</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Corporate Documentary Film</h3>
+                <p>A 12-minute brand story documentary for an NGO — narrative structure, interview cuts, b-roll
+                  integration, and score composition.</p>
+                <div class="wcard-tech"><span>DaVinci Resolve</span><span>Premiere Pro</span></div>
+                <a href="#" class="wcard-link">Watch Video <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div> -->
+
+            <!-- <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-pink">
+                <i class="fa-brands fa-instagram fa-3x"></i>
+                <span class="wcard-tag">Social Media</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Social Media Content Pack</h3>
+                <p>30-day content package for a fashion brand — Reels, TikToks, and YouTube Shorts optimised for each
+                  platform's algorithm.</p>
+                <div class="wcard-tech"><span>Premiere Pro</span><span>CapCut</span><span>After Effects</span></div>
+                <a href="#" class="wcard-link">Watch Video <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div> -->
+
+            <!-- <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-indigo">
+                <i class="fa-solid fa-layer-group fa-3x"></i>
+                <span class="wcard-tag">Branding</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Brand Identity System</h3>
+                <p>Complete brand identity for a Lagos-based tech startup — logo, colour palette, typography, brand
+                  guidelines, and stationery.</p>
+                <div class="wcard-tech"><span>Illustrator</span><span>Photoshop</span><span>Figma</span></div>
+                <a href="#" class="wcard-link">View Design <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div> -->
+
+            <!-- Logos & Brand Marks Card - Opens Modal -->
+            <div class="work-card design-collection-card" data-aos data-collection="logos">
+              <div class="wcard-img placeholder-img pi-rose">
+                <i class="fa-solid fa-layer-group fa-3x"></i>
+                <span class="wcard-tag">Logo Collection</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Logos & Brand Marks</h3>
+                <p>A curated collection of creative logo designs exploring negative space, typography, and brand
+                  identity.</p>
+                <div class="wcard-tech"><span>Illustrator</span><span>Photoshop</span><span>Figma</span></div>
+                <span class="wcard-link modal-trigger">View Collection <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+
+            <!-- Flyers, Posters & Print Pack - Opens Modal -->
+            <div class="work-card design-collection-card" data-aos data-collection="prints">
+              <div class="wcard-img placeholder-img pi-teal">
+                <i class="fa-solid fa-print fa-3x"></i>
+                <span class="wcard-tag">Print & Design</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Flyers, Posters & Print Pack</h3>
+                <p>A ready-made archive of professional designs — event flyers, advertisement posters, social
+                  announcements, and more. Just a few pieces from the full collection.</p>
+                <div class="wcard-tech"><span>Photoshop</span><span>Illustrator</span><span>Canva</span></div>
+                <span class="wcard-link modal-trigger">View Collection <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+
+            <!-- <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-lime">
+                <i class="fa-solid fa-photo-film fa-3x"></i>
+                <span class="wcard-tag">Print</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Event Poster Series</h3>
+                <p>A 6-piece poster series for a music festival — bold typography, illustrated elements, and layered
+                  photo manipulation.</p>
+                <div class="wcard-tech"><span>Photoshop</span><span>Illustrator</span></div>
+                <a href="#" class="wcard-link">View Design <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div> -->
+
+            <!-- <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-rose">
+                <i class="fa-solid fa-swatchbook fa-3x"></i>
+                <span class="wcard-tag">Social</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Social Media Graphics Kit</h3>
+                <p>A comprehensive Canva + Photoshop template system — 40+ editable templates across Instagram,
+                  Twitter/X, and LinkedIn.</p>
+                <div class="wcard-tech"><span>Photoshop</span><span>Canva</span><span>Illustrator</span></div>
+                <a href="#" class="wcard-link">View Design <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div> -->
+
+            <!-- <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-amber">
+                <i class="fa-solid fa-box fa-3x"></i>
+                <span class="wcard-tag">Packaging</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Product Packaging Design</h3>
+                <p>Packaging design for a skincare brand — dieline construction, print-ready files, 3D mockup renders,
+                  and retail display design.</p>
+                <div class="wcard-tech"><span>Illustrator</span><span>Photoshop</span><span>Dimension</span></div>
+                <a href="#" class="wcard-link">View Design <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- Software Dev -->
+        <div class="works-pane" id="tab-software">
+          <div class="works-grid">
+            <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-blue">
+                <i class="fa-solid fa-compass fa-3x"></i>
+                <span class="wcard-tag">Web App</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Pathway Compass</h3>
+                <p>Your comprehensive support hub for navigating your journey to success in BYU-Pathway Worldwide. Find
+                  step-by-step tutorials, registration help, career resources, and get help from agents who understand
+                  your journey.</p>
+                <div class="wcard-tech"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+                <a href="https://pathwaycompass.com/" target="_blank" class="wcard-link">View Project <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-indigo">
+                <i class="fas fa-graduation-cap fa-3x"></i>
+                <span class="wcard-tag">Web App</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Learning Hub Platform</h3>
+                <p>A full-featured e-learning platform inspired by Udemy. Users can explore, select, and enroll in a
+                  wide variety of detailed courses and tutorials across intuitively organized categories.</p>
+                <div class="wcard-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <a href="https://ikpemhinoghena.github.io/learning-hub/learning-hub/" target="_blank"
+                  class="wcard-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-purple">
+                <i class="fa-solid fa-c fa-3x"></i>
+                <span class="wcard-tag">C# Repo</span>
+              </div>
+              <div class="wcard-body">
+                <h3>CSE210 C# Projects</h3>
+                <p>A consolidated repository of my early C# console applications, developed to demonstrate mastery of
+                  core object-oriented programming principles and structured logic.</p>
+                <div class="wcard-tech"><span>C#</span><span>.NET</span></div>
+                <a href="https://github.com/ikpemhinoghena/cse210-projects.git" target="_blank" class="wcard-link">View
+                  Repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-pink">
+                <i class="fa-solid fa-images fa-3x"></i>
+                <span class="wcard-tag">Gallery</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Interactive Gallery</h3>
+                <p>A visually stunning, dynamic image gallery featuring smooth animations, advanced CSS layouts, and
+                  engaging JavaScript implementations for a premium user experience.</p>
+                <div class="wcard-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <a href="https://ikpemhinoghena.github.io/InteractiveGallery/" target="_blank" class="wcard-link">View
+                  Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-teal">
+                <i class="fa-solid fa-leaf fa-3x"></i>
+                <span class="wcard-tag">Website</span>
+              </div>
+              <div class="wcard-body">
+                <h3>AfriHerbs</h3>
+                <p>A comprehensive website for a herbal healing organization. Highlights natural remedies with
+                  exceptional JavaScript-driven interactivity and beautifully structured health resources.</p>
+                <div class="wcard-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <a href="https://ikpemhinoghena.github.io/Afriherbs/" target="_blank" class="wcard-link">View Project <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-green">
+                <i class="fa-solid fa-seedling fa-3x"></i>
+                <span class="wcard-tag">Website</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Natural Curative Cure</h3>
+                <p>An alternative edition of the AfriHerbs platform dedicated to an organization offering natural
+                  organic herbs and curative solutions for serious illnesses.</p>
+                <div class="wcard-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <a href="https://ikpemhinoghena.github.io/Natural-Curative-Cure-2/" target="_blank"
+                  class="wcard-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-purple">
+                <i class="fa-solid fa-address-card fa-3x"></i>
+                <span class="wcard-tag">Web App</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Latter-day Prophets Directory</h3>
+                <p>A responsive web application that asynchronously fetches JSON data to dynamically generate and
+                  display a gallery of Latter-day Prophets. Showcases advanced DOM manipulation and API integration.</p>
+                <div class="wcard-tech"><span>HTML</span><span>CSS</span><span>JavaScript API</span></div>
+                <a href="https://ikpemhinoghena.github.io/Latter-day-Prophets/" target="_blank" class="wcard-link">View
+                  Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <!-- <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-green">
+                <i class="fa-solid fa-cart-shopping fa-3x"></i>
+                <span class="wcard-tag">E-Commerce</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Multi-Vendor E-Commerce Platform</h3>
+                <p>A scalable e-commerce solution with vendor management, payment integration, and an intelligent
+                  recommendation engine.</p>
+                <div class="wcard-tech"><span>C#</span><span>.NET</span><span>SQL Server</span></div>
+                <a href="#" class="wcard-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div> -->
+
+            <!-- <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-purple">
+                <i class="fa-solid fa-mobile-screen fa-3x"></i>
+                <span class="wcard-tag">Mobile</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Fintech Mobile App</h3>
+                <p>A personal finance tracker with AI-powered budgeting advice, expense categories, and bank-level
+                  transaction encryption.</p>
+                <div class="wcard-tech"><span>React Native</span><span>Firebase</span><span>Python</span></div>
+                <a href="#" class="wcard-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div> -->
+
+            <!-- <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-orange">
+                <i class="fa-solid fa-server fa-3x"></i>
+                <span class="wcard-tag">API</span>
+              </div>
+              <div class="wcard-body">
+                <h3>RESTful API Gateway</h3>
+                <p>A secure, rate-limited API gateway that centralises microservices with JWT authentication, logging,
+                  and auto-documentation.</p>
+                <div class="wcard-tech"><span>Node.js</span><span>Express</span><span>Redis</span></div>
+                <a href="#" class="wcard-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- Video Editing -->
+        <div class="works-pane" id="tab-video">
+          <div class="works-grid">
+            <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-gold">
+                <i class="fa-brands fa-youtube fa-3x"></i>
+                <span class="wcard-tag">YouTube</span>
+              </div>
+              <div class="wcard-body">
+                <h3>PathwayCompass YouTube Channel</h3>
+                <p>Produced and edited comprehensive video and multimedia content for the PathwayCompass YouTube
+                  channel, delivering high-quality long-form episodes and engaging short-form social reels that
+                  effectively drive brand engagement.</p>
+                <div class="wcard-tech"><span>After Effects</span><span>Premiere Pro</span><span>Canva</span></div>
+                <a href="https://www.youtube.com/@PathwayCompass" target="_blank" class="wcard-link">Watch Channel <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <!-- <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-red">
+                <i class="fa-solid fa-play fa-3x"></i>
+                <span class="wcard-tag">Commercial</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Brand Commercial — Retail Client</h3>
+                <p>A 60-second product launch commercial featuring colour grading, motion graphics, and a custom sound
+                  design mix.</p>
+                <div class="wcard-tech"><span>Premiere Pro</span><span>After Effects</span><span>DaVinci</span></div>
+                <a href="#" class="wcard-link">Watch Video <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div> -->
+
+            <!-- <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-teal">
+                <i class="fa-solid fa-video fa-3x"></i>
+                <span class="wcard-tag">Documentary</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Corporate Documentary Film</h3>
+                <p>A 12-minute brand story documentary for an NGO — narrative structure, interview cuts, b-roll
+                  integration, and score composition.</p>
+                <div class="wcard-tech"><span>DaVinci Resolve</span><span>Premiere Pro</span></div>
+                <a href="#" class="wcard-link">Watch Video <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div> -->
+
+            <!-- <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-pink">
+                <i class="fa-brands fa-instagram fa-3x"></i>
+                <span class="wcard-tag">Social Media</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Social Media Content Pack</h3>
+                <p>30-day content package for a fashion brand — Reels, TikToks, and YouTube Shorts optimised for each
+                  platform's algorithm.</p>
+                <div class="wcard-tech"><span>Premiere Pro</span><span>CapCut</span><span>After Effects</span></div>
+                <a href="#" class="wcard-link">Watch Video <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- Graphic Design -->
+        <div class="works-pane" id="tab-design">
+          <div class="works-grid">
+            <!-- <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-indigo">
+                <i class="fa-solid fa-layer-group fa-3x"></i>
+                <span class="wcard-tag">Branding</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Brand Identity System</h3>
+                <p>Complete brand identity for a Lagos-based tech startup — logo, colour palette, typography, brand
+                  guidelines, and stationery.</p>
+                <div class="wcard-tech"><span>Illustrator</span><span>Photoshop</span><span>Figma</span></div>
+                <a href="#" class="wcard-link">View Design <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div> -->
+
+            <!-- Logos & Brand Marks Card - Opens Modal -->
+            <div class="work-card design-collection-card" data-aos data-collection="logos">
+              <div class="wcard-img placeholder-img pi-indigo">
+                <i class="fa-solid fa-layer-group fa-3x"></i>
+                <span class="wcard-tag">Logo Collection</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Logos & Brand Marks</h3>
+                <p>A curated collection of creative logo designs exploring negative space, typography, and brand
+                  identity.</p>
+                <div class="wcard-tech"><span>Illustrator</span><span>Photoshop</span><span>Figma</span></div>
+                <span class="wcard-link modal-trigger">View Collection <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+
+            <!-- Flyers, Posters & Print Pack - Opens Modal -->
+            <div class="work-card design-collection-card" data-aos data-collection="prints">
+              <div class="wcard-img placeholder-img pi-teal">
+                <i class="fa-solid fa-print fa-3x"></i>
+                <span class="wcard-tag">Print & Design</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Flyers, Posters & Print Pack</h3>
+                <p>A ready-made archive of professional designs — event flyers, advertisement posters, social
+                  announcements, and more. Just a few pieces from the full collection.</p>
+                <div class="wcard-tech"><span>Photoshop</span><span>Illustrator</span><span>Canva</span></div>
+                <span class="wcard-link modal-trigger">View Collection <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+
+            <!-- <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-lime">
+                <i class="fa-solid fa-photo-film fa-3x"></i>
+                <span class="wcard-tag">Print</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Event Poster Series</h3>
+                <p>A 6-piece poster series for a music festival — bold typography, illustrated elements, and layered
+                  photo manipulation.</p>
+                <div class="wcard-tech"><span>Photoshop</span><span>Illustrator</span></div>
+                <a href="#" class="wcard-link">View Design <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-rose">
+                <i class="fa-solid fa-swatchbook fa-3x"></i>
+                <span class="wcard-tag">Social</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Social Media Graphics Kit</h3>
+                <p>A comprehensive Canva + Photoshop template system — 40+ editable templates across Instagram,
+                  Twitter/X, and LinkedIn.</p>
+                <div class="wcard-tech"><span>Photoshop</span><span>Canva</span><span>Illustrator</span></div>
+                <a href="#" class="wcard-link">View Design <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="work-card" data-aos>
+              <div class="wcard-img placeholder-img pi-amber">
+                <i class="fa-solid fa-box fa-3x"></i>
+                <span class="wcard-tag">Packaging</span>
+              </div>
+              <div class="wcard-body">
+                <h3>Product Packaging Design</h3>
+                <p>Packaging design for a skincare brand — dieline construction, print-ready files, 3D mockup renders,
+                  and retail display design.</p>
+                <div class="wcard-tech"><span>Illustrator</span><span>Photoshop</span><span>Dimension</span></div>
+                <a href="#" class="wcard-link">View Design <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div> -->
+          </div>
+        </div>
+
+      </div><!-- /works-panes -->
+
+      <!-- View More Container -->
+      <div class="works-view-more" style="display: flex; justify-content: center; margin-top: 40px;" data-aos>
+        <button id="viewMoreWorksBtn" class="btn-ghost">
+          <span>View More</span> <i class="fa-solid fa-arrow-down-long"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LANGUAGES ===================== -->
+  <section id="languages" class="section lang-section">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">04</span>
+        <span class="label-line"></span>
+        <span class="label-text">Languages</span>
+      </div>
+      <div class="lang-header" data-aos>
+        <h2 class="section-title">I Speak<br><em>Globally</em></h2>
+        <p class="lang-desc">Communication is the foundation of great collaboration — across code, culture, and
+          continents.</p>
+      </div>
+      <div class="lang-grid" data-aos>
+        <!-- English -->
+        <div class="lang-card">
+          <div class="lang-flag">
+            <span class="flag-emoji">🇬🇧</span>
+          </div>
+          <div class="lang-content">
+            <h3 class="lang-name">English</h3>
+            <span class="lang-level">Native / Fluent</span>
+            <div class="lang-bar">
+              <div class="lang-bar-fill" style="width:98%"></div>
+            </div>
+            <p class="lang-note">Professional working proficiency — writing, speaking, presenting.</p>
+          </div>
+        </div>
+        <!-- Chinese -->
+        <div class="lang-card">
+          <div class="lang-flag">
+            <span class="flag-emoji">🇨🇳</span>
+          </div>
+          <div class="lang-content">
+            <h3 class="lang-name">Chinese (Mandarin)</h3>
+            <span class="lang-level">Conversational</span>
+            <div class="lang-bar">
+              <div class="lang-bar-fill lbf-mid" style="width:52%"></div>
+            </div>
+            <p class="lang-note">Conversational Mandarin — growing proficiency in reading and speaking.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">05</span>
+        <span class="label-line"></span>
+        <span class="label-text">Get In Touch</span>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-left" data-aos>
+          <h2 class="section-title">Let's Build<br><em>Something Great</em></h2>
+          <p class="contact-intro">Got a project in mind? Whether it's an app, a brand, a campaign, or a Video — I'd
+            love
+            to hear about it. Let's make it happen.</p>
+
+          <div class="contact-details">
+            <a href="mailto:etiuzaleikpemhinoghena@gmail.com" class="contact-item">
+              <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">Email</span>
+                <span class="ci-val">etiuzaleikpemhinoghena@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+2349013187647" class="contact-item">
+              <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">Phone / WhatsApp</span>
+                <span class="ci-val">+234 901 318 7647</span>
+              </div>
+            </a>
+            <div class="contact-item no-link">
+              <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">Location</span>
+                <span class="ci-val"> Nigeria</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <span class="cs-label">Find me online</span>
+            <div class="cs-links">
+              <a href="https://github.com/ikpemhinoghena" target="_blank" title="GitHub" class="cs-btn">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/ikpemhinoghena/" target="_blank" title="LinkedIn" class="cs-btn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://x.com/Ikpemhinoghena_" target="_blank" title="X / Twitter" class="cs-btn">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="https://wa.me/2349013187647" target="_blank" title="WhatsApp" class="cs-btn">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <!--
+              <a href="https://instagram.com" target="_blank" title="Instagram" class="cs-btn">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://behance.net" target="_blank" title="Behance" class="cs-btn">
+                <i class="fa-brands fa-behance"></i>
+              </a>
+              <a href="https://dribbble.com" target="_blank" title="Dribbble" class="cs-btn">
+                <i class="fa-brands fa-dribbble"></i>
+              </a>
+              -->
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right" data-aos>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="cf-name">Full Name</label>
+              <input type="text" id="cf-name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email Address</label>
+              <input type="email" id="cf-email" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="cf-service">Service Needed</label>
+              <select id="cf-service">
+                <option value="">— Select a service —</option>
+                <option>Software Development</option>
+                <option>SEO & Digital Marketing</option>
+                <option>Graphic Design</option>
+                <option>Video Editing</option>
+                <option>Multiple Services</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cf-msg">Your Message</label>
+              <textarea id="cf-msg" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#hero" class="footer-logo">IE<span class="accent">.</span></a>
+        <p class="footer-tagline">Building. Designing. Telling Stories.</p>
+      </div>
+      <div class="footer-mid">
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#works">Works</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/ikpemhinoghena" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ikpemhinoghena/" target="_blank"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://x.com/Ikpemhinoghena_" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://wa.me/2349013187647" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <!-- <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a> -->
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="footerYear"></span>. All rights reserved.</span>
+        <!-- <span>© <span id="footerYear"></span> Ikpemhinoghena Etiuzale. All rights reserved.</span> -->
+
+        <!-- <span>Crafted with <i class="fa-solid fa-heart" style="color:#d4a24c"></i> in Abuja</span> -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Logo Collection Modal -->
+  <div class="modal-overlay" id="logoModal">
+    <div class="modal-container">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Logos & Brand Marks</h2>
+          <p class="modal-subtitle">A curated collection of creative logo designs exploring negative space, typography,
+            and brand identity.</p>
+        </div>
+        <div class="modal-body">
+          <div class="logo-grid">
+            <!-- Logo Item 1: Vons Vert Logo (Combined Variants) -->
+            <div class="logo-item">
+              <div class="logo-img-wrap multi-image">
+                <img src="assets/images/von-vert-logo.jpg" alt="Vons Vert Logo - Light variant">
+                <img src="assets/images/von's-vert-logo.jpg" alt="Vons Vert Logo - Dark variant">
+              </div>
+              <div class="logo-info">
+                <h4>Vons' Vert Logo</h4>
+                <p>A minimalist logo design featuring a bold 'V' letterform enclosed in a dashed circular border.
+                  Showcasing versatility with both light and dark variants for comprehensive brand applications.</p>
+                <div class="logo-tags"><span>Minimalism</span><span>Negative
+                    Space</span><span>Typography</span><span>Brand Identity</span><span>Versatility</span></div>
+              </div>
+            </div>
+
+            <!-- Logo Item 2: Kej Technologies Logo -->
+            <div class="logo-item">
+              <div class="logo-img-wrap multi-image">
+                <img src="assets/images/kej-technologies.jpg" alt="Kej Technologies Logo - Dark and Light variants">
+                <img src="assets/images/kej-technologies.jpg" alt="Kej Technologies Logo - Light and Dark variants">
+              </div>
+              <div class="logo-info">
+                <h4>Kej Technologies Logo</h4>
+                <p>A creative and modern logo design for Kej Technologies, featuring a bold 'K' letterform with
+                  geometric precision and professional typography. Demonstrates strong brand presence across different
+                  applications.</p>
+                <div class="logo-tags">
+                  <span>Technology</span><span>Modern</span><span>Geometric</span><span>Professional</span><span>Brand
+                    Identity</span></div>
+              </div>
+            </div>
+
+            <!-- Logo Item 3: Avalon Logo -->
+            <div class="logo-item">
+              <div class="logo-img-wrap">
+                <img src="assets/images/Avalon.jpg" alt="Avalon Logo - Creative geometric design">
+              </div>
+              <div class="logo-info">
+                <h4>Avalon Logo</h4>
+                <p>A creative and distinctive logo design for Avalon, featuring geometric shapes and modern aesthetics.
+                  The design showcases versatility with multiple brand color applications and strong visual impact.</p>
+                <div class="logo-tags">
+                  <span>Creative</span><span>Geometric</span><span>Modern</span><span>Versatile</span><span>Brand
+                    Identity</span></div>
+              </div>
+            </div>
+
+            <!-- Logo Item 4: UN Investment Logo -->
+            <div class="logo-item">
+              <div class="logo-img-wrap multi-image">
+                <img src="assets/images/UN-investment (1).jpg" alt="UN Investment Logo - Primary Variant">
+                <img src="assets/images/UN-investment (2).jpg" alt="UN Investment Logo - Secondary Variant">
+              </div>
+              <div class="logo-info">
+                <h4>UN Investment Logo</h4>
+                <p>A professional and authoritative logo design for UN Investment. The brand mark conveys trust, growth,
+                  and financial stability through strong typography and strategic modern application.</p>
+                <div class="logo-tags"><span>Corporate</span><span>Finance</span><span>Authoritative</span><span>Brand
+                    Identity</span></div>
+              </div>
+            </div>
+
+            <!-- Logo Item 5: CanSecure Logo -->
+            <div class="logo-item">
+              <div class="logo-img-wrap">
+                <img src="assets/images/CanSecure.jpg" alt="CanSecure Logo - Creative negative space design">
+              </div>
+              <div class="logo-info">
+                <h4>CanSecure Logo</h4>
+                <p>A highly creative logo design for CanSecure featuring brilliant use of negative space. The design
+                  subtly communicates security and protection while maintaining a clean, minimalist aesthetic.</p>
+                <div class="logo-tags"><span>Negative
+                    Space</span><span>Creative</span><span>Security</span><span>Minimalism</span></div>
+              </div>
+            </div>
+
+            <!-- Logo Item 6: House of Uniflex Logo -->
+            <div class="logo-item">
+              <div class="logo-img-wrap">
+                <img src="assets/images/house-of-uniflex.jpg" alt="House of Uniflex Logo - Music and DJ Academy">
+              </div>
+              <div class="logo-info">
+                <h4>House of Uniflex</h4>
+                <p>A dynamic and energetic logo design for House of Uniflex, an academy that teaches DJ skills and music
+                  production. The identity captures the rhythm, culture, and high-energy atmosphere of the music
+                  industry.</p>
+                <div class="logo-tags"><span>Music</span><span>Entertainment</span><span>Dynamic</span><span>Brand
+                    Identity</span></div>
+              </div>
+            </div>
+
+            <!-- Logo Item 7: Zaleweb Logo -->
+            <div class="logo-item">
+              <div class="logo-img-wrap">
+                <img src="assets/images/zaleweb-logo.jpg" alt="Zaleweb Logo - Technology, Gaming, and Software Design">
+              </div>
+              <div class="logo-info">
+                <h4>Zaleweb Logo</h4>
+                <p>An amazing and highly creative logo design for Zaleweb, a technology company specializing in software
+                  development, design, and gaming. The brand mark perfectly balances high-tech aesthetics with playful,
+                  dynamic creativity.</p>
+                <div class="logo-tags">
+                  <span>Technology</span><span>Gaming</span><span>Software</span><span>Creative</span></div>
+              </div>
+            </div>
+
+            <!-- Logo Item 8: Greasy Bite Logo -->
+            <div class="logo-item">
+              <div class="logo-img-wrap">
+                <img src="assets/images/greasy-bite.jpg"
+                  alt="Greasy Bite Logo - Creative Burger Bun Negative Space Design">
+              </div>
+              <div class="logo-info">
+                <h4>Greasy Bite</h4>
+                <p>An incredibly creative logo for a restaurant called Greasy Bite. The design brilliantly uses negative
+                  space, forming a delicious burger bun that seamlessly wraps around the brand name.</p>
+                <div class="logo-tags"><span>Negative
+                    Space</span><span>Restaurant</span><span>Creative</span><span>Brand Identity</span></div>
+              </div>
+            </div>
+
+            <!-- Logo Item 9: Bert's Accessories Logo -->
+            <div class="logo-item">
+              <div class="logo-img-wrap">
+                <img src="assets/images/berts-chargers.jpg"
+                  alt="Bert's Accessories Logo - Negative Space Charger Design">
+              </div>
+              <div class="logo-info">
+                <h4>Bert's Accessories</h4>
+                <p>A highly creative logo design for Bert's Accessories, an organization specializing in chargers, power
+                  banks, and tech accessories. The mark employs clever negative space to visually communicate charging
+                  and energy while maintaining a sleek brand presence.</p>
+                <div class="logo-tags"><span>Negative
+                    Space</span><span>Tech</span><span>Creative</span><span>Energy</span></div>
+              </div>
+            </div>
+
+            <!-- Logo Item 10: Elite Logistics Logo -->
+            <div class="logo-item">
+              <div class="logo-img-wrap multi-image">
+                <img src="assets/images/Elite-logistics (1).jpg"
+                  alt="Elite Logistics Logo - Negative Space Delivery Design">
+                <img src="assets/images/Elite-logistics (2).jpg" alt="Elite Logistics Logo - Variant">
+              </div>
+              <div class="logo-info">
+                <h4>Elite Logistics</h4>
+                <p>A highly creative logo design for Elite Logistics, a premium delivery and logistics company. The mark
+                  incorporates brilliant negative space techniques to convey speed, movement, and dependable delivery
+                  services.</p>
+                <div class="logo-tags"><span>Negative
+                    Space</span><span>Logistics</span><span>Creative</span><span>Delivery</span></div>
+              </div>
+            </div>
+
+            <!-- Logo Item 11: GB Foods Logo -->
+            <div class="logo-item">
+              <div class="logo-img-wrap">
+                <img src="assets/images/gb-foods.jpg" alt="GB Foods Logo - Eatery and Restaurant Design">
+              </div>
+              <div class="logo-info">
+                <h4>GB Foods</h4>
+                <p>A warm and appetizing logo design for GB Foods, a local eatery. The brand identity captures the
+                  essence of great food and inviting hospitality, creating a memorable visual presence for customers.
+                </p>
+                <div class="logo-tags"><span>Eatery</span><span>Food</span><span>Hospitality</span><span>Brand
+                    Identity</span></div>
+              </div>
+            </div>
+
+            <!-- Logo Item 12: Creative Restaurant Logo -->
+            <div class="logo-item">
+              <div class="logo-img-wrap">
+                <img src="assets/images/greasybite-2.jpg" alt="Creative Restaurant Logo">
+              </div>
+              <div class="logo-info">
+                <h4>Creative Restaurant Logo</h4>
+                <p>An alternative, highly creative logo design for a restaurant identity, emphasizing engaging
+                  aesthetics and a cohesive brand experience.</p>
+                <div class="logo-tags"><span>Restaurant</span><span>Creative</span><span>Design</span><span>Brand
+                    Identity</span></div>
+              </div>
+            </div>
+
+            <p class="prints-archive-note"><i class="fa-solid fa-layer-group"></i> This is just a few pieces from the
+              full archive — the collection runs much deeper.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Prints & Flyers Modal -->
+  <div class="modal-overlay" id="printsModal" style="display:none;">
+    <div class="modal-container" style="max-width:1000px;">
+      <button class="modal-close" id="printsModalClose" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Flyers, Posters & Print Pack</h2>
+          <p class="modal-subtitle">A curated selection from the archive — event flyers, announcements, advertisements,
+            social posts, and more. Crafted with precision for print and digital use.</p>
+        </div>
+        <div class="modal-body">
+
+          <!-- Group 1: Event Announcements -->
+          <h3 class="print-group-label">Event Announcements</h3>
+          <div class="prints-grid">
+            <div class="print-item"><img src="assets/images/design-for-post-and-print/welcomebackparty.png"
+                alt="Welcome Back Party Flyer" loading="lazy"></div>
+            <div class="print-item"><img src="assets/images/design-for-post-and-print/another-dinner-night-update.png"
+                alt="Dinner Night Flyer" loading="lazy"></div>
+            <div class="print-item"><img src="assets/images/design-for-post-and-print/final-outreach-flyer-back.png"
+                alt="Outreach Flyer" loading="lazy"></div>
+            <div class="print-item"><img src="assets/images/design-for-post-and-print/adesuwa-2nd-ward-chatgpt.png"
+                alt="Ward Event Flyer" loading="lazy"></div>
+          </div>
+
+          <!-- Group 2: Programs -->
+          <h3 class="print-group-label">Programs & Programmes</h3>
+          <div class="prints-grid">
+            <div class="print-item"><img
+                src="assets/images/design-for-post-and-print/mar-2026-stake-program-paper-updated.png"
+                alt="Stake Program Paper" loading="lazy"></div>
+            <div class="print-item"><img
+                src="assets/images/design-for-post-and-print/stake-conf-2026-marasdf-w-2a-update.png"
+                alt="Stake Conference Flyer 2026" loading="lazy"></div>
+            <div class="print-item"><img
+                src="assets/images/design-for-post-and-print/combined-class-Institute-flyer-1-another-extra-another.png"
+                alt="Institute Class Flyer" loading="lazy"></div>
+            <div class="print-item"><img
+                src="assets/images/design-for-post-and-print/combined-class-Institute-flyer-1-another-extra-another - Copy.png"
+                alt="Institute Class Flyer Alt" loading="lazy"></div>
+          </div>
+
+          <!-- Group 3: Social Media Ads -->
+          <h3 class="print-group-label">Social Media Ads & Campaigns</h3>
+          <div class="prints-grid">
+            <div class="print-item"><img src="assets/images/design-for-post-and-print/hildgod-tiktok-1.png"
+                alt="Hildgod TikTok Ad 1" loading="lazy"></div>
+            <div class="print-item"><img src="assets/images/design-for-post-and-print/hildgod-tiktok-2.png"
+                alt="Hildgod TikTok Ad 2" loading="lazy"></div>
+            <div class="print-item"><img src="assets/images/design-for-post-and-print/hildgod-tiktok-3.png"
+                alt="Hildgod TikTok Ad 3" loading="lazy"></div>
+            <div class="print-item"><img src="assets/images/design-for-post-and-print/hildgod-tiktok-ad 4.png"
+                alt="Hildgod TikTok Ad 4" loading="lazy"></div>
+            <div class="print-item"><img src="assets/images/design-for-post-and-print/hilgod-2-one-2.png"
+                alt="Hildgod Campaign Design" loading="lazy"></div>
+            <div class="print-item"><img src="assets/images/design-for-post-and-print/hilgod-3-go-updatewsdfgh.png"
+                alt="Hildgod Campaign Update" loading="lazy"></div>
+            <div class="print-item"><img
+                src="assets/images/design-for-post-and-print/WhatsApp Image 2026-02-15 at 12.21.29.jpeg"
+                alt="Social Media Design" loading="lazy"></div>
+          </div>
+
+          <!-- Group 4: Mixed -->
+          <h3 class="print-group-label">Mixed Designs</h3>
+          <div class="prints-grid">
+            <div class="print-item"><img src="assets/images/design-for-post-and-print/1668799006200.jpg" alt="Design 1"
+                loading="lazy"></div>
+            <div class="print-item"><img src="assets/images/design-for-post-and-print/1670295026098.jpg" alt="Design 2"
+                loading="lazy"></div>
+            <div class="print-item"><img src="assets/images/design-for-post-and-print/1671504704477.jpg" alt="Design 3"
+                loading="lazy"></div>
+            <div class="print-item"><img src="assets/images/design-for-post-and-print/1675771725247.jpg" alt="Design 4"
+                loading="lazy"></div>
+            <div class="print-item"><img src="assets/images/design-for-post-and-print/1689684480469.jpg" alt="Design 5"
+                loading="lazy"></div>
+          </div>
+
+          <p class="prints-archive-note"><i class="fa-solid fa-layer-group"></i> This is just a few pieces from the full
+            archive — the collection runs much deeper.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
