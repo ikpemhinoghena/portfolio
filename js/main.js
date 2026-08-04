@@ -487,7 +487,7 @@ document.addEventListener('DOMContentLoaded', () => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const stats = [
-            { el: statsEl.querySelectorAll('.stat')[0], target: 4 },
+            { el: statsEl.querySelectorAll('.stat')[0], target: 5 },
             { el: statsEl.querySelectorAll('.stat')[1], target: 50 },
             { el: statsEl.querySelectorAll('.stat')[2], target: 30 },
           ];
